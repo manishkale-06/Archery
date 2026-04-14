@@ -8,6 +8,7 @@ public class StartGame : MonoBehaviour
     public bool hasStarted = false;
     public Canvas gameMenu;
     public Canvas crossHair;
+    public Canvas scorePanel;
     private ScoreChange score;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -26,6 +27,7 @@ public class StartGame : MonoBehaviour
         hasStarted = true;
         gameMenu.gameObject.SetActive(false);
         crossHair.gameObject.SetActive(true);
+        scorePanel.gameObject.SetActive(true);
         score.UpdateScore(0);
         Cursor.lockState = CursorLockMode.Locked;
     }

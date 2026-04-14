@@ -10,7 +10,7 @@ public class TargetHit : MonoBehaviour
     }
 
     // Update is called once per frame
-     void OnCollisionEnter(Collision collision)
+    void OnCollisionEnter(Collision collision)
     {
         rb.isKinematic = true;   
         rb.linearVelocity = Vector3.zero;
